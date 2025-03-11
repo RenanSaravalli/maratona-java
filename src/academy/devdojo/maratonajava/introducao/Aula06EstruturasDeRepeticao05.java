@@ -10,6 +10,7 @@ public class Aula06EstruturasDeRepeticao05 {
                 continue;
             }
             System.out.printf("Parcela: %d R$ %.2f\n", parcela, valorParcela);
+            System.out.println("TESTE GIT CLONE");
         }
     }
 }
