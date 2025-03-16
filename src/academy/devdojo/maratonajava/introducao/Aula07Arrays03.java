@@ -11,5 +11,9 @@ public class Aula07Arrays03 {
         for (int i = 0; i < nomes.length; i++) {
             System.out.println(nomes[i]);
         }
+
+        nomes = new String[5];
+        // Nomes recebe uma nova referência e a anterior é apagada pelo carbage
+        // colector
     }
 }
