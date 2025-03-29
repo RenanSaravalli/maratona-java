@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.teste;
 
 import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio.Carro;
 
-public class CarroTeste01 {
+public class CarroTeste02 {
     public static void main(String[] args) {
         Carro carro1 = new Carro();
         carro1.nome = "Fusca";
@@ -14,7 +14,7 @@ public class CarroTeste01 {
         carro2.modelo = "Chevrolet";
         carro2.ano = 2010;
 
-
+        carro1 = carro2; // Agora carro1 faz a mesma referêcia que carro 2
 
         carro1.imprimeValores();
 
