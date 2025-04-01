@@ -31,10 +31,17 @@ public class EstudanteTeste01 {
         impressora.imprime(estudante02);
     }
 }
-// Quando trabalhamos com objetos do tipo referência estamos, passando uma cópia da
+// Quando trabalhamos com objetos do tipo referência estamos, passando uma
 // Referência
 
 // Quando passamos objetos como argumento, na verdade, estamos, passando a referência
 // de onde o objeto está guardado.
 
 // Podemos ter várias referências para o mesmo objeto.
+
+// Quando estamos, passando parâmetros via referência tudo que fizer no objeto
+// vai afetar o objeto
+
+// As boas regras da progração diz que ao invés de alterarmos os dados que estamos
+// passando no objeto se precisarmos realizar alguma alteração temos que retornar
+// um novo objeto
