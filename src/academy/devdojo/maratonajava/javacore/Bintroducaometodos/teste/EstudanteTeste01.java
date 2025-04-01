@@ -29,6 +29,11 @@ public class EstudanteTeste01 {
 
         impressora.imprime(estudante01);
         impressora.imprime(estudante02);
+
+        System.out.println("------nome-alterado------");
+
+        impressora.imprime(estudante01);
+        impressora.imprime(estudante02);
     }
 }
 // Quando trabalhamos com objetos do tipo referência estamos, passando uma
@@ -45,3 +50,4 @@ public class EstudanteTeste01 {
 // As boas regras da progração diz que ao invés de alterarmos os dados que estamos
 // passando no objeto se precisarmos realizar alguma alteração temos que retornar
 // um novo objeto
+
