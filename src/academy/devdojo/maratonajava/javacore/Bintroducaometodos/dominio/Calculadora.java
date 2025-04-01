@@ -43,4 +43,25 @@ public class  Calculadora {
         System.out.println("Num1 " + num1);
         System.out.println("Num2 " + num2);
     }
+
+    public void somaArray(int[] numeros) {
+        int soma= 0;
+
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+    // O que vai mudar vai ser na chamada desses métodos
+    public void somaVarArgs(int...numeros) {
+        // por de baixo dos panos o java transforma esse varargs em um array
+        // Caso tenha mais um valor a ser passado como parâmetro, esse valor tem que
+        // vir primeiro e por último o varargs
+        int soma= 0;
+
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println(soma);
+    }
 }
