@@ -5,6 +5,7 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
     public Anime() {
 
@@ -17,11 +18,18 @@ public class Anime {
         this.genero = genero;
     }
 
+    public Anime(String nome, String tipo, int epsodios, String genero, String estudio) {
+        this(nome, tipo, epsodios, genero); // Aqui o this referencia o construtor de cima
+        // o que nos ajuda a diminuir o código da sobrecarga
+        this.estudio = estudio;
+    }
+
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.tipo);
         System.out.println(this.episodios);
         System.out.println(this.genero);
+        System.out.println(this.estudio);
     }
 
     public String getNome() {
@@ -54,5 +62,13 @@ public class Anime {
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    public String getEstudio() {
+        return estudio;
+    }
+
+    public void setEstudio(String estudio) {
+        this.estudio = estudio;
     }
 }
