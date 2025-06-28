@@ -10,7 +10,7 @@ public class CarroTeste01 {
 
         /*TOdas as instancias de carro vão ter o valor 180
         * Associado a velocidadeLimite por conta de ter o modificador STATIC*/
-        Carro.velocidadeLimite = 180;
+        Carro.setVelocidadeLimite(180);
 
         c1.imprime();
         c2.imprime();
