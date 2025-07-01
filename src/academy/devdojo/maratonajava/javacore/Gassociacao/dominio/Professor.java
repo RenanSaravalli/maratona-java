@@ -19,6 +19,26 @@ public class Professor {
         this.seminarios = seminarios;
     }
 
+    public void imprime() {
+        System.out.println("---- Relatório ----");
+        System.out.println("Professor: " + this.nome);
+        System.out.println("Especialidade Professor: " + this.especialidade);
+        if (seminarios == null) return;
+        for (Seminario seminario : this.seminarios) {
+
+            System.out.println(seminario.getTitulo());
+            System.out.println(seminario.getLocal().getEndereco());
+
+            if (seminario.getAlunos() == null || seminario.getAlunos().length == 0) continue;
+            System.out.println("---- Alunos ----");
+            for (Aluno aluno : seminario.getAlunos()) {
+                System.out.println("Aluno:" + aluno.getNome() + ". idade: " + aluno.getIdade() + " anos");
+            }
+
+        }
+
+    }
+
     public String getNome() {
         return nome;
     }
