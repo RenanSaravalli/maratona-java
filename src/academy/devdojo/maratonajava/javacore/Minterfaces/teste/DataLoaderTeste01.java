@@ -8,6 +8,11 @@ public class DataLoaderTeste01 {
         DatabaseLoader databaseLoader = new DatabaseLoader();
         FileLoader fileLoader = new FileLoader();
         databaseLoader.load();
+        databaseLoader.remove();
         fileLoader.load();
+        fileLoader.remove();
+
+        databaseLoader.checkPermission();
+        fileLoader.checkPermission();
     }
 }
