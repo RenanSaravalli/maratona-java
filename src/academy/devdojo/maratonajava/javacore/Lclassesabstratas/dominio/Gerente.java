@@ -17,4 +17,9 @@ public class Gerente extends Funcionario{
                 ", nome='" + nome + '\'' +
                 '}';
     }
+
+    @Override
+    public void imprime() {
+        System.out.println("Gerente");
+    }
 }

@@ -18,4 +18,9 @@ public class Desenvolvedor extends Funcionario{
                 ", salario=" + salario +
                 '}';
     }
+
+    @Override
+    public void imprime() {
+        System.out.println("Desenvolvedor");
+    }
 }
