@@ -25,12 +25,10 @@ public class RunTimeExceptionTest04 {
 
         try {
             talvezExecute();
-        } catch (SQLException e) {
+        } catch (SQLException | FileNotFoundException e) {
             e.printStackTrace();
         }
-        catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+
 
         return null;
     }
