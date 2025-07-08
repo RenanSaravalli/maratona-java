@@ -1,6 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Rdatas.test;
-
-import academy.devdojo.maratonajava.javacore.Gassociacao.dominio.Local;
+package academy.devdojo.maratonajava.javacore.Sformatacao.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
