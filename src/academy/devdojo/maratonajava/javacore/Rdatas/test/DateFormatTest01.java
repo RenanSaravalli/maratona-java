@@ -42,8 +42,5 @@ public class DateFormatTest01 {
 
         // obs: para formatações um pouco mais avançadas vamos utilizar outra classe:
         // SimpleDateFormat
-
-
-
     }
 }
