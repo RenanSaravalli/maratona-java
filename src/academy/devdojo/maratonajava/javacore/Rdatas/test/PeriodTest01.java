@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 public class PeriodTest01 {
     public static void main(String[] args) {
@@ -29,6 +30,11 @@ public class PeriodTest01 {
 
         // Period não vai conseguir retornar a quantidade de meses conforme a quantidade de dias
         System.out.println(p2.getMonths()); // Retorna 0
+
+        // Então agora digamos que tu queira saber a quantidade de meses
+        // Utilizando a LocalDateTime, você poderia fazer algo mais ou menos assim:
+        System.out.println(now.until(now.plusDays(p2.getDays()), ChronoUnit.MONTHS));
+        // Aqui no caso você vai ter 13 meses
 
     }
 }
