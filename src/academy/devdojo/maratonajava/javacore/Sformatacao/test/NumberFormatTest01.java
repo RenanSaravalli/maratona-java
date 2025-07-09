@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Sformatacao.test;
 
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 public class NumberFormatTest01 {
@@ -26,8 +27,18 @@ public class NumberFormatTest01 {
         double valor = 10_000.2130;
 
         for (NumberFormat numberFormat : nfa) {
+            numberFormat.setMaximumFractionDigits(2); // alterando a quantidade de casas decimais
+            System.out.println(numberFormat.getMaximumFractionDigits());
             System.out.println(numberFormat.getCurrency() + numberFormat.format(valor));
 
+        }
+
+        // Podemos realizar o parse de uma String para NumberFormat
+        String valor1 = "1000.2134";
+        try {
+            System.out.println(nfa[0].parse(valor1));
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
 
     }
