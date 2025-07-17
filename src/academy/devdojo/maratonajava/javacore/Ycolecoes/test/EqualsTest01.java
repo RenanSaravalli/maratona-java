@@ -13,9 +13,18 @@ public class EqualsTest01 {
         // Vamos utilizar o equals para realizar comparação de objetos
         // o equals vai comparar a referência que os objetos fazem
 
-        s2 = s1;
+        //s2 = s1;
 
         System.out.println(s1.equals(s2));
         // Isso agora é verdadeiro
+
+        // Na classe sobrescrevemos o métod equals. Agora quando comparar ele vai levar em consideração o serialNumber
+        // se for igual ele retorna true
+        Smartphone s3 = new Smartphone("Sexo123", "SurubaDigital");
+        System.out.println(s1.equals(s3));
+        // false
+
+
+
     }
 }
