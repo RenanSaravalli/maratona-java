@@ -18,5 +18,16 @@ public class ListTest01 {
             System.out.println(nomes.get(i));
         }
 
+        nomes.remove(0);
+        nomes.remove("Naruto");
+
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(1);
+        integerList.add(2);
+
+        List<Integer> integerList2 = new ArrayList<>();
+
+        integerList2.addAll(integerList);
+
     }
 }
