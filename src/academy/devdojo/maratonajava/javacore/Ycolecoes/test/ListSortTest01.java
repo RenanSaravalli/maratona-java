@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Ycolecoes.test;
 
+import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Manga;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -19,5 +21,7 @@ public class ListSortTest01 {
         for (String manga : mangas) {
             System.out.println(manga);
         }
+
+        new Manga(null, null, 12.2d);
     }
 }

@@ -2,14 +2,14 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.dominio;
 
 import java.util.Objects;
 
-public class Manga {
+public class Manga implements Comparable{
     private Long id;
     private String nome;
     private double preco;
 
     public Manga(Long id, String nome, double preco) {
-        Objects.requireNonNull(id);
-        Objects.requireNonNull(nome);
+        Objects.requireNonNull(id, "Id não pode ser NUll");
+        Objects.requireNonNull(nome, "Nome não pode ser null");
         this.id = id;
         this.nome = nome;
         this.preco = preco;
@@ -59,5 +59,22 @@ public class Manga {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Manga outroManga = (Manga) o;
+         // A regra é a seguinte esse métod retorna um inteiro
+        // temos dois objetos o this e outroManga
+        // retornamos negativo se this < outroManga
+        // se this = outroManga, return 0
+        // positivo se this > outroManga
+
+        return this.getId().compareTo(outroManga.getId());
+
+        // Basicamente estamos falando para o java para quando for organizar realizar um sort em uma coleção
+        // dessa classe utilizar o Id para comparar os objetos
+        // return Double.compare(preco, outroManga.preco);
+        // return this.nome.compareTo(outroManga.getNome());
     }
 }
