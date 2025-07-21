@@ -4,6 +4,7 @@ import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Manga;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class MangaSortTest01 {
@@ -28,6 +29,8 @@ public class MangaSortTest01 {
         for (Manga manga : mangas) {
             System.out.println(manga);
         }
+
+        mangas.sort(Comparator.comparingLong(Manga::getId));
 
 
     }
