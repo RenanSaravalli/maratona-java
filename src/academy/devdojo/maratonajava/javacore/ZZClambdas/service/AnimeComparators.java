@@ -11,4 +11,9 @@ public class AnimeComparators {
         return Integer.compare(a1.getEpisodes(), a2.getEpisodes());
     }
 
+    // Reference com métod não static
+
+    public int animeCompareByEpisodesNonStatic(Anime a1, Anime a2 ) {
+        return Integer.compare(a1.getEpisodes(), a2.getEpisodes());
+    }
 }
