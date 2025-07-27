@@ -9,9 +9,8 @@ import java.util.function.Predicate;
 
 public class ComportamentoPorParametroTest03 {
     private static List<Car> cars = List.of(new Car("Green", 2011), new Car("White", 1998), new Car("Red", 2020));
-
     public static void main(String[] args) {
-        List<Car> whiteCars = filter(cars, car -> car.getColor().equals("White"));
+        List<Car> whiteCars = filter(cars, (Car car) -> car.getColor().equals("White"));
         System.out.println(whiteCars);
         System.out.println("---------------------");
 
@@ -42,3 +41,4 @@ public class ComportamentoPorParametroTest03 {
         return filteredList;
     }
 }
+
