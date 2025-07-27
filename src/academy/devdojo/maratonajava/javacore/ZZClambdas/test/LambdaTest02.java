@@ -12,6 +12,18 @@ public class LambdaTest02 {
         System.out.println(namesLength);
         List<String> namesUpper = map(names, s -> s.toUpperCase());
         System.out.println(namesUpper);
+
+        // Implementando o Method Reference nas
+        // Funções Lambdas (podemos utilizar, quando
+        // a lambda retorna apeanas um métod). Ela simplifica
+        // o código
+        System.out.println("---Implementando method reference");
+        List<Integer> namesLengthMethodReference = map(names, String::length);
+        System.out.println(namesLengthMethodReference);
+
+        List<String> namesUpperMethodReference = map(names, String::toUpperCase);
+        System.out.println(namesUpperMethodReference);
+
     }
 
     private static <T, R> List<R> map(List<T> list, Function<T, R> function) {
