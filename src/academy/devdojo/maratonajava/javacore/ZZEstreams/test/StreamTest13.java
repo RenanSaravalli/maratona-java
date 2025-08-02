@@ -5,12 +5,11 @@ import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.LightNovel;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class StringTest13 {
+public class StreamTest13 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Tensei Shittara", 8.99, Category.FANTASY),
             new LightNovel("Overload", 3.99, Category.FANTASY),
