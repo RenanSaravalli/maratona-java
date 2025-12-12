@@ -16,6 +16,7 @@ public class EqualsTest01 {
         //s2 = s1;
 
         System.out.println(s1.equals(s2));
+        System.out.println("Comparando Serial " + s1.getSerialNumber().equals(s2.getSerialNumber()));
         // Isso agora é verdadeiro
 
         // Na classe sobrescrevemos o métod equals. Agora quando comparar ele vai levar em consideração o serialNumber
